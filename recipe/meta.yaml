@@ -1,5 +1,5 @@
 {% set name = "marINvaders" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/marinvaders-{{ version }}.tar.gz
-  sha256: 2f1c148f6f5c123a53f44da75b97e8011aff0b5989c757ceff4f52c80472f75c
+  sha256: f45d64027d8cb16cd0bb728736bb4eb439a24ad04a7d0299e3da9c27ebfc77a2
 
 build:
   number: 0
