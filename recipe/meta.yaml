@@ -31,7 +31,9 @@ requirements:
     - requests
     - shapely
     - pytables
+    - tqdm
     - xlrd
+
 
 test:
   imports:
