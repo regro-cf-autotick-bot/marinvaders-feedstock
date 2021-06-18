@@ -36,7 +36,7 @@ requirements:
 test:
   imports:
     - marinvaders
-    - marinvaders.tests
+    - marinvaders.util
   commands:
     - pip check
   requires:
