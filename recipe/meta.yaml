@@ -30,6 +30,7 @@ requirements:
     - python >=3.7
     - requests
     - shapely
+    - openpyxl
     - pytables
     - tqdm
     - xlrd
