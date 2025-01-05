@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/marinvaders-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/marinvaders-{{ version }}.tar.gz
   sha256: 809411ce90058fc2c649f8630a07a89acba7beee5e0f570fe83c30ae1a2e667e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - beautifulsoup4
     - cached-property
@@ -27,7 +27,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.7
+    - python >={{ python_min }}
     - requests
     - shapely
     - openpyxl
@@ -44,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/dlab-indecol/marinvaders
